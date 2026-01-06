@@ -1,21 +1,48 @@
-# 💫 About Me:
-🔭 I’m currently working on website designing.<br>👯 I’m looking to collaborate on learning tech stacks.<br>🤝 I’m looking for help in understanding which tech stack is good. <br>🌱 I’m currently learning web development.<br>⚡ Fun fact: I mostly work at nights.
+<div className="flex min-h-[80vh] flex-col items-center justify-center p-4 text-center">
+      {/* Animation Container */}
+      <div className="relative mb-8 h-40 w-40">
+        {/* Pulsing Background Glow */}
+        <div className="absolute inset-0 animate-pulse rounded-full bg-blue-500/20 blur-3xl" />
 
+        {/* Main Gear - Slow Spin */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Cog className="h-32 w-32 animate-[spin_8s_linear_infinite] text-slate-300 opacity-80" />
+        </div>
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/devansh.rajan) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/devanshrajan) [![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/29101943) [![Codepen](https://img.shields.io/badge/Codepen-000000?logo=codepen&logoColor=white)](https://codepen.io/@TheAstronautGuy) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:astrooo@duck.com) 
+        {/* Small Gear - Reverse Spin */}
+        <div className="absolute right-0 bottom-0 flex items-center justify-center">
+          <Cog className="h-16 w-16 animate-[spin_6s_linear_infinite_reverse] text-blue-400" />
+        </div>
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=AstronautGuy&theme=github_dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=AstronautGuy&theme=github_dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=AstronautGuy&theme=github_dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+        {/* Hammer Animation (Simple bounce/pulse overlap) */}
+        <div className="absolute top-0 -left-2 flex items-center justify-center">
+          <Hammer className="h-12 w-12 -rotate-45 animate-bounce text-purple-400" />
+        </div>
+      </div>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+      {/* Text Content */}
+      <div className="max-w-md space-y-4">
+        <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-xs font-medium text-blue-300 ring-1 ring-blue-500/20 ring-inset">
+          <Construction className="h-3 w-3" />
+          <span>Work in Progress</span>
+        </div>
 
----
-[![](https://visitcount.itsvg.in/api?id=AstronautGuy&icon=0&color=0)](https://visitcount.itsvg.in)
+        <h1 className="bg-gradient-to-br from-white to-slate-400 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl">
+          {title}
+        </h1>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+        <p className="text-lg text-slate-400">{description}</p>
+
+        <div className="pt-8">
+          <Link href={backLink}>
+            <Button
+              variant="outline"
+              className="gap-2 border-slate-700 bg-slate-900/50 text-slate-300 hover:bg-slate-800 hover:text-white"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              {backLabel}
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </div>
